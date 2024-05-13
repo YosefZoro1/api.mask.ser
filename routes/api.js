@@ -1460,7 +1460,7 @@ welcomeCanvas.context = welcomeCanvas.create.getContext('2d')
 welcomeCanvas.context.font = '72px creme'
 welcomeCanvas.context.fillStyle = '#ffffff'
 
-await Canvas.loadImage("./asset/image/wbg1.jpg").then(async (img) => {
+await Canvas.loadImage("./asset/image/background2.png").then(async (img) => {
     welcomeCanvas.context.drawImage(img, 0, 0, 1024, 500)
 
 })
