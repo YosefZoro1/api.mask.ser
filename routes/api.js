@@ -1460,17 +1460,15 @@ welcomeCanvas.context = welcomeCanvas.create.getContext('2d')
 welcomeCanvas.context.font = '72px creme'
 welcomeCanvas.context.fillStyle = '#ffffff'
 
-await Canvas.loadImage("./asset/image/background2.png").then(async (img) => {
-    welcomeCanvas.context.drawImage(img, 0, 0, 1024, 500)
-
+await Canvas.loadImage(bg)
+.then(bg => {
+    can.context.drawImage(bg, 0, 0, 1024, 500); // تحميل bg كخلفية
 })
-
 let can = welcomeCanvas
 
 
-await Canvas.loadImage(bg)
-.then(bg => {
-can.context.drawImage(bg, 320, 0, 709, 360)
+await Canvas.loadImage("./asset/image/background2.png").then(async (img) => {
+    welcomeCanvas.context.drawImage(img, 0, 0, 1024, 500);
 })
 
     let canvas = welcomeCanvas
